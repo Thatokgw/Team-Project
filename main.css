@@ -1,0 +1,369 @@
+/* core styles */
+* body, html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #090911fa;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/*.bg-image {
+    width: 100%;
+    height: 100%;
+}*/
+
+/* HEADER */
+#showcase {
+    background-image: url(/images/bg\ image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border: 3px green solid;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* Nav Bar */
+#menuBar {
+    /*background: #333;*/
+    overflow: hidden;
+}
+
+.topMenu a {
+    background: black;
+    /*float: left;*/
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: .5px solid red;
+}
+
+.topMenu a:hover {
+    background-color: #ddd;
+    color: #5e1313;
+}
+
+.topMenu a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topMenu .icon {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .topMenu a/*:not(:first-child)*/ {display: none;}
+    .topMenu a.icon {
+        float: center;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .topMenu.responsive {
+        position: relative;
+    }
+    .topMenu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    } 
+    .topMenu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+} 
+
+/* section-B */
+
+#section-b {
+    background: #0ea80eee;
+    padding: 10px 0 5px;
+    color: #0a0a0a;
+}
+h3 {
+    text-transform: uppercase;
+}
+
+/* Section-C */
+
+#section-c {
+    list-style: none;
+    }
+
+/*ul {
+    list-style: none;
+}*/
+
+.card {
+    margin: 1.5px;
+}
+ 
+#source {
+    text-transform: lowercase;
+    color: red;
+}
+/* to remove this before live */
+.card {
+    border: 1px #ccc solid;
+    margin-bottom: 2px;
+}
+
+.card-heading {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-top: 2px red solid;
+}
+
+.card-content {
+    text-transform: uppercase;
+    padding: 2px;
+    color: #fff;
+    align-self: center;
+    margin: 1px;
+}
+
+
+.topmenu {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    border-radius: 10px;
+    margin: .5em 0;
+    cursor: pointer;
+}
+
+a:hover {
+    background: green;
+    color: #f2f2f2;
+    border: #a81818de solid;
+    transition-duration: 0.7s;
+}
+
+
+
+/* Fixtures Styles */
+.fixtures {
+    background: #0ea76c18;
+    margin: 2px;
+    border: 1px #f2f2f2 solid;
+    padding: 1.5em;
+}
+
+.clash {
+    /*display: inline;*/
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 90px;
+    grid-gap: .2em;
+    border: .5px #33e5e5 solid;
+    padding: .5em;
+    background: #0ea76c15;
+}
+
+.clash>img {
+    width: 100%;
+    height: 100%;
+}
+
+.versus {
+    width: 60px;
+    height: 60px;
+    border: #a81818de solid;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0a0a0a;
+    align-self: center;
+    margin: 2px 10px 2px 10px;
+}
+
+.team-names {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px; 
+    gap: 5px;
+    border: .5px #ccc solid;
+    margin: 5px;
+    padding: 3px;
+}
+
+.match-sale {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80px;
+}
+.match-details,
+.ticket-sale {
+    margin: 2px #05d05d solid;
+    border: 1px solid ;
+    padding: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    background: pink;
+}
+
+.ticket-sale, .tickets {
+    background: green;
+    color: white;
+    text-transform: uppercase;
+    align-content: center;
+    cursor: pointer;
+}
+
+.tickets:hover {
+    background: #f2f2f2;
+    color: green;
+    border: .15em green solid;
+    font-weight: 500;
+    /*border: green 2px solid;*/
+}
+
+.tickets {
+    transition-duration: 0.7s;
+}
+
+.FX-all {
+    background: #0a0a0a;
+    color: #f2f2f2;
+    height: 50px;
+    width: 220px;
+    margin-top: 20px;
+    border: #f2f2f2 .7px solid;
+    text-transform: uppercase;
+    align-content: center;
+    text-decoration: none;
+}
+
+.FX-all:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    color: green;
+    border: .15em green solid;
+    font-weight: 600;
+}
+
+/*section C Styles */
+
+.special {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(20px, auto);
+    gap: .5px;
+    margin: 1px;
+    padding: 1px;
+}
+
+/* Section D Styles */
+
+.card-links-heading {
+    text-transform: none;
+    text-decoration: underline;
+    font-weight: 600;
+    padding-bottom: 2.5px;
+}
+
+.card-links-heading>ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: subgrid;
+    gap: 2em;
+    border: 1.5px;
+}
+
+.card-links-heading>ul>li>a:nth-child(odd) {
+    background: #310f09b7;
+}
+
+/* footer */
+#main-footer {
+    margin: 1px;
+}
+
+.rights {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.policy-terms, .rights {
+    background: #292828;
+}
+
+.policy-terms li {
+    display: inline-block; 
+    font-size: small;
+    margin: .6px;
+    padding: .5px;
+}
+
+.policy-terms {
+    list-style: none;
+}
+
+address>a:hover,
+.policy-terms>li>a:hover,
+.card-links-heading>ul>li>a:hover {
+    color: green;
+    transition-duration: 0.6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
